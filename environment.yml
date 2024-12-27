@@ -1,0 +1,10 @@
+name: gk_hello
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - fastapi
+  - jinja2
+  - python-multipart
+  - uvicorn
+prefix: /opt/homebrew/Caskroom/miniconda/base/envs/gk_hello
