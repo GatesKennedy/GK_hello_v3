@@ -4,8 +4,8 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 
-from data_work import projects_data
-from data_tool import skill_columns, attribute_data
+from DATA.data_work import projects_data
+from DATA.data_tool import skill_columns, attribute_data
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
