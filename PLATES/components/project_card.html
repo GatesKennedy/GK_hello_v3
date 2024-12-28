@@ -1,0 +1,55 @@
+{# PLATES/components/project_card.html #}
+{% macro project_card(project) %}
+	<div class="project-card fade-in">
+		<style>
+			.project-card {
+				margin: 1.5rem 0;
+				padding: 1.5rem;
+				border: 1px solid var(--accent);
+				border-radius: 8px;
+			}
+
+			.project-title {
+				font-size: 1.5rem;
+				margin: 0 0 1rem 0;
+			}
+
+			.project-desc {
+				color: var(--text-secondary);
+				margin-bottom: 1rem;
+			}
+
+			.tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				margin-top: 1rem;
+			}
+
+			.tag {
+				background: var(--accent);
+				padding: 0.25rem 0.75rem;
+				border-radius: 4px;
+				font-size: 0.875rem;
+			}
+		</style>
+
+		<h3 class="project-title">{{ project.title }}</h3>
+		<p class="project-desc">{{ project.description }}</p>
+
+		<div class="tags">
+			{% for tag in project.attributes.tags %}
+			<span class="tag">{{ tag }}</span>
+			{% endfor %}
+		</div>
+
+		<div class="project-features">
+			{% for feature in project.features %}
+			<div class="feature">
+				<h4>{{ feature.title }}</h4>
+				<p>{{ feature.desc }}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endmacro %}

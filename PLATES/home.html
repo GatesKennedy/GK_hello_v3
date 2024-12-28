@@ -1,0 +1,17 @@
+{# PLATES/pages/index.html #}
+{% extends "base.html" %}
+{% from "components/project_card.html" import project_card %}
+{% from "components/skills_grid.html" import skills_grid %}
+
+{% block title %}Hello{% endblock %}
+
+{% block content %}
+
+
+	<section
+		id="skills"
+		class="section">
+		<h2>tools</h2>
+		{{ skills_grid(skills) }}
+	</section>
+{% endblock %}

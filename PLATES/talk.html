@@ -1,0 +1,63 @@
+{# PLATES/pages/talk.html #}
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<section class="contact-section fade-in">
+	<style>
+		.contact-section {
+			text-align: center;
+			padding: 4rem 0;
+		}
+
+		.contact-heading {
+			font-size: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.contact-links {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			max-width: 300px;
+			margin: 0 auto;
+		}
+
+		.contact-link {
+			color: var(--text-primary);
+			text-decoration: none;
+			padding: 1rem;
+			border: 1px solid var(--accent);
+			border-radius: 4px;
+			transition: background-color 0.2s;
+		}
+
+		.contact-link:hover {
+			background-color: var(--accent);
+		}
+	</style>
+
+	<h2 class="contact-heading">Get in touch</h2>
+
+	<div class="contact-links">
+		<a
+			href="mailto:{{ STRINGS.EMAIL_CONOR }}"
+			class="contact-link">
+			Email
+		</a>
+		<a
+			href="{{ STRINGS.GITHUB_GK }}"
+			class="contact-link"
+			target="_blank">
+			GitHub
+		</a>
+		<a
+			href="{{ STRINGS.LINKEDIN_CONOR }}"
+			class="contact-link"
+			target="_blank">
+			LinkedIn
+		</a>
+	</div>
+</section>
+{% endblock %}

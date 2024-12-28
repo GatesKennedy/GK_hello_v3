@@ -1,0 +1,16 @@
+{
+	"files.associations": {
+		"**/*.html": "jinja-html",
+		"PLATES/*.html": "jinja-html"
+	},
+	"editor.formatOnSave": true,
+	"python.analysis.extraPaths": ["./DATA", "./SERVER"],
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python",
+		"editor.formatOnSave": true
+	},
+	"[jinja-html]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "samuelcolvin.jinjahtml"
+	}
+}

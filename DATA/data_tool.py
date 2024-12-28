@@ -5,7 +5,7 @@ from DATA.const_strings import TOOL
 skill_columns: List[Dict[str, Any]] = [
     # Client
     {
-        'title': 'Client',
+        'title': 'client',
         'text': 'Client-side Tools',
         'icon': None,  # Removed React Icon component
         'skill_list': [
@@ -15,6 +15,7 @@ skill_columns: List[Dict[str, Any]] = [
             TOOL.DATA_VIS.value,
             # TOOL.REACTHOOKFORM.value,
             TOOL.STYLED_COMP.value,
+			TOOL.JINJA.value,
             TOOL.MUI.value,
             TOOL.CHAKRA.value,
             TOOL.REDUX.value,
@@ -27,7 +28,7 @@ skill_columns: List[Dict[str, Any]] = [
     },
     # Server
     {
-        'title': 'Server',
+        'title': 'server',
         'text': 'Server-side Tools',
         'icon': None,  # Removed React Icon component
         'skill_list': [
@@ -37,11 +38,11 @@ skill_columns: List[Dict[str, Any]] = [
             TOOL.FASTIFY.value,
             TOOL.REST.value,
             TOOL.GRAPH_QL.value,
-            TOOL.AWS_EC2.value,
-            # TOOL.AWS_LAMBDA.value,
             TOOL.NODE_POSTGRES.value,
             TOOL.PRISMA.value,
             TOOL.UVICORN.value,
+            TOOL.AWS_EC2.value,
+            TOOL.AWS_LAMBDA.value,
             # TOOL.SEQUELIZE.value,
             # TOOL.CORS.value,
             # TOOL.NODEMAILER.value,
@@ -50,7 +51,7 @@ skill_columns: List[Dict[str, Any]] = [
     },
     # Data
     {
-        'title': 'Data & AI',
+        'title': 'data & ai',
         'text': 'Data Analytics...',
         'icon': None,  # Removed React Icon component
         'skill_list': [
@@ -58,44 +59,48 @@ skill_columns: List[Dict[str, Any]] = [
             TOOL.PANDAS.value,
             TOOL.NUMPY.value,
             TOOL.PYDANTIC.value,
+			TOOL.OPENCV.value,
             TOOL.MATPLOTLIB.value,
             TOOL.SQL_ALCH.value,
             TOOL.CONDA.value,
             TOOL.LocalLLMs.value,
             TOOL.HUGGING.value,
             TOOL.AUTOGEN.value,
+			TOOL.GRIPTAPE_AI.value
         ],
     },
     # Storage
     {
-        'title': 'Storage',
+        'title': 'storage',
         'text': 'Database Tools',
         'icon': None,  # Removed React Icon component
         'skill_list': [
             TOOL.DB_DESIGN.value,
             TOOL.POSTGRES.value,
-            TOOL.AWS_S3.value,
-            TOOL.MONGO.value,
             TOOL.MY_SQL.value,
-            TOOL.SQL_SERVER.value,
+			TOOL.MINIO.value,
             TOOL.REDIS.value,
+            TOOL.MONGO.value,
+            TOOL.AWS_S3.value,
             TOOL.AWS_RDS.value,
+            TOOL.SQL_SERVER.value,
             # TOOL.AWS_DYNAMO.value,
             TOOL.DB_MIGRATE.value,
         ],
     },
     # Dev Ops
     {
-        'title': 'DevOps',
+        'title': 'dev-ops',
         'text': 'Project Mgmt',
         'icon': None,  # Removed React Icon component
         'skill_list': [
             TOOL.GIT.value,
             TOOL.ATLASSIAN.value,
-            # TOOL.GIT_LAB.value,
+            TOOL.GIT_LAB.value,
             TOOL.DOCKER_HUB.value,
             TOOL.DOCKER_COMPOSE.value,
             # TOOL.JENKINS.value,
+			TOOL.TEAM_CITY.value,
             TOOL.AGILE.value,
             TOOL.GREEN_GEEKS.value,
             TOOL.AWS_ROUTE.value,
@@ -108,7 +113,7 @@ skill_columns: List[Dict[str, Any]] = [
     },
     # Util
     {
-        'title': 'Utility',
+        'title': 'utility',
         'text': 'Other Tools...',
         'icon': None,  # Removed React Icon component
         'skill_list': [

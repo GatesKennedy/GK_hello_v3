@@ -1,0 +1,46 @@
+{# PLATES/components/skills_grid.html #}
+{% macro skills_grid(skills) %}
+<div class="skills-grid fade-in">
+	<style>
+		.skills-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 2rem;
+			margin-top: 2rem;
+		}
+
+		.skill-category {
+			margin-bottom: 2rem;
+		}
+
+		.skill-title {
+			font-size: 1.25rem;
+			margin-bottom: 1rem;
+		}
+
+		.skill-tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+		}
+
+		.skill-tag {
+			background: var(--accent);
+			padding: 0.25rem 0.75rem;
+			border-radius: 4px;
+			font-size: 0.875rem;
+		}
+	</style>
+
+	{% for category in skills %}
+	<div class="skill-category">
+		<h3 class="skill-title">{{ category.title }}</h3>
+		<div class="skill-tags">
+			{% for skill in category.skill_list %}
+			<span class="skill-tag">{{ skill }}</span>
+			{% endfor %}
+		</div>
+	</div>
+	{% endfor %}
+</div>
+{% endmacro %}

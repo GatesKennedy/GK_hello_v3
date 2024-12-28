@@ -1,6 +1,6 @@
 # Python Project Directory Structure
 
-Generated on: 2024-12-27 15:57:57
+Generated on: 2024-12-27 17:57:30
 
 Root path: /Users/ohnodamn/Local/SOFT/GK_Hello/GK_hello_v3
 
@@ -15,8 +15,15 @@ Note: Common Python development folders and files are ignored
 	│	├── data_work.py
 	│	└── types_data.py
 	├── PLATES
+	│	├── components
+	│	│	├── navbar.html
+	│	│	├── project_card.html
+	│	│	└── skills_grid.html
 	│	├── __init__.py
-	│	└── index.html
+	│	├── base.html
+	│	├── index.html
+	│	├── talk.html
+	│	└── time.html
 	├── SERVER
 	│	├── __init__.py
 	│	├── config.py

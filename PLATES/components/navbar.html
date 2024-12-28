@@ -1,0 +1,36 @@
+{# PLATES/components/navbar.html #}
+<nav class="navbar">
+	<style>
+		.navbar {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem;
+			border-bottom: 1px solid var(--accent);
+		}
+
+		.nav-links {
+			display: flex;
+			gap: 1.5rem;
+		}
+
+		.nav-links a {
+			color: var(--text-primary);
+			text-decoration: none;
+			opacity: 0.8;
+			transition: opacity 0.2s;
+		}
+
+		.nav-links a:hover {
+			opacity: 1;
+		}
+	</style>
+
+	<div class="logo">Gates_Kennedy</div>
+	<div class="nav-links">
+		<a href="/">G_K</a>
+		<a href="/time">WORK</a>
+		<a href="/void">VOID</a>
+		<a href="/talk">TALK</a>
+	</div>
+</nav>
