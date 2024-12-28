@@ -28,7 +28,8 @@ class TOOL(str, Enum):
     AGILE = 'Agile Methodology'
     AGILE_SCRUM = 'Agile & Scrum'
     ATLASSIAN = 'Jira & Confluence'
-    AUTOGEN = 'AutoGen AI Agents'
+    AUTOGEN = 'AutoGen (AI)'
+    AGENTS = 'Agentic AI'
     AWS = 'AWS'
     AWS_CLI = 'AWS CLI'
     AWS_DYNAMO = 'AWS DynamoDB'
@@ -63,7 +64,7 @@ class TOOL(str, Enum):
 
     ESLINT = 'ESLint'
     EXPRESS = 'Express.js (TS)'
-    FAST_API = 'FastAPI (Python)'
+    FAST_API = 'FastAPI'
     FASTIFY = 'Fastify'
 
     GIT = 'Git'
@@ -72,7 +73,7 @@ class TOOL(str, Enum):
     GO = 'GoLang'
     GRAPH_QL = 'GraphQL API'
     GREEN_GEEKS = 'GreenGeeks'
-    GRIPTAPE_AI = 'Griptape AI'
+    GRIPTAPE_AI = 'Griptape (AI)'
 
     HASURA = 'Hasura'
     HEROKU_PIPE = 'Heroku Pipelines'
@@ -91,7 +92,7 @@ class TOOL(str, Enum):
     LLAMA = 'LLaMA LLM'
     LocalLLMs = 'Local LLMs'
 
-    MATPLOTLIB = 'Matplotlib / Seaborn'
+    MATPLOTLIB = 'Matplotlib'
     MUI = 'Material UI'
     MINIO = 'MinIO'
     MONGO = 'MongoDB'

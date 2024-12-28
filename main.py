@@ -1,27 +1,20 @@
 # main.py
-from fastapi import FastAPI, Request
-from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import HTMLResponse
+import uvicorn
 
-from DATA.data_work import projects_data
-from DATA.data_tool import skill_columns, attribute_data
+from SERVER import routes
+from SERVER.config import get_app
 
-app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
+if __name__ == "__main__":
+    app = get_app()
 
-@app.get("/", response_class=HTMLResponse)
-async def home(request: Request):
-    return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
-            "projects": projects_data,
-            "skills": skill_columns,
-            "attributes": attribute_data
-        }
-    )
+    # uvicorn server config
+    uvicorn_config = {
+        "app": "SERVER.config:app",
+        "host": "0.0.0.0",
+        "port": 8000,
+        "reload": True,
+        "workers": 1
+    }
 
-
-
+    # run uvicorn server
+    uvicorn.run(**uvicorn_config)
